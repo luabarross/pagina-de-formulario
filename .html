@@ -1,0 +1,187 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Sempre por dentro das novas tendências da Maoli</h1>
+    <p id="description" class="description text-center"> Cadastre-se para receber novidades da nossa loja de acessórios favorita
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+         <label id="name-label"
+                for="name">Nome</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Coloque seu Nome"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Coloque seu Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+             >Idade<span class="clue">(opcional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Idade"
+      />
+    </div>
+    <div class="form-group">
+      <p>Qual opção combina mais com seu estilo?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selecione seu estilo favorito</option>
+        <option value="student">Clássicas</option>
+        <option value="job">Minimalistas</option>
+        <option value="learner">Modernas</option>
+        <option value="preferNo">Ousadas</option>
+        <option value="other">Coloridas</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Você recomendaria a Maoli para suas amigas?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Claro que sim</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Talvez</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Não</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Qual acessório não pode faltar?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Selecione uma opção</option>
+        <option value="chocker">Chocker/Colares</option>
+        <option value="anéis">Anéis</option>
+        <option value="pulseiras">Pulseira</option>
+        <option value="brincos">Brincos</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        O que você acha que poderia ser melhorado na nossa loja?
+        <span class="clue">(Marque todos que quiser)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="visualizaçao-de-produtos-no-site"
+          type="checkbox"
+          class="input-checkbox"
+        />Visualização de produtos no site</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="formas-de-pagamento"
+          type="checkbox"
+          class="input-checkbox"
+        />Formas de pagamento</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="qualidade-das-peças"
+          type="checkbox"
+          class="input-checkbox"
+        />Qualidade das peças</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="tempo-de-resposta"
+          type="checkbox"
+          class="input-checkbox"
+        />Tempo de resposta</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="novos-estilos"
+          type="checkbox"
+          class="input-checkbox"
+        />Novos estilos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="ajuda-aos-clientes"
+          type="checkbox"
+          class="input-checkbox"
+        />Ajuda aos clientes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="como-usar-nossos-acessórios"
+          type="checkbox"
+          class="input-checkbox"
+        />Como usar nossos acessórios</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="cuidados-com-os-acessorios"
+          type="checkbox"
+          class="input-checkbox"
+        />Cuidados com os acessórios</label
+      >
+      </div>
+    <div class="form-group">
+      <p>Tem algum comentário ou sugestão? Deixe aqui e nós agradecemos muito</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Digite aqui seu comentário, sugestão, elogio, crítica..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+</div>
